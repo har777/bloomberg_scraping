@@ -8,12 +8,12 @@ from scrapy import log
 class MongoDBPipeline(object):
     def __init__(self):
         client = MongoClient()
-        db = client.scrapy
-        collection = db.my_items
+        db = client.data
+        collection = db.items
 
 
 
     def process_item(self, item, spider):
 
-        self.collection.insert(dict(item))
+        self.db["items"].insert(dict(item))
         return item

@@ -17,8 +17,8 @@ ITEM_PIPELINES = [
 ]
 
 MONGODB_URI = 'mongodb://localhost:27017'
-MONGODB_DATABASE = 'scrapy'
-MONGODB_COLLECTION = 'my_items'
+MONGODB_DATABASE = 'data'
+MONGODB_COLLECTION = 'items'
 #MONGODB_UNIQUE_KEY = 'url'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'bloomberg2 (+http://www.yourdomain.com)'
