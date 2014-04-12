@@ -1,0 +1,1 @@
+Uses Scrapy to crawl bloomberg.com recursively for article text. The data is stored realtime to your local mongodb instance(currently configured to localhost, db:data, collection:items). Cd into the directory and do "scrapy crawl bloomberg_spider" to run the crawler. 
